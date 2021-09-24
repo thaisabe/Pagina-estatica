@@ -1,0 +1,134 @@
+header {
+  top: 0;
+}
+header nav {
+  background-color: #994602;
+  font-size: large;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+header nav a {
+  text-decoration: none;
+  color: lightgray;
+}
+
+body {
+  background: rgb(235, 207, 170);
+  margin: 0;
+}
+
+main {
+  font-size: large;
+  text-align: justify;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  column-gap: 10px;
+  row-gap: 10px;
+  grid-template-columns: 2, 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "titulo titulo" "option1 option1" "option2 option2";
+}
+
+#titulo {
+  grid-area: titulo;
+  text-align: center;
+}
+
+.photo_paint {
+  height: 270px;
+  width: 530px;
+  max-width: 400px;
+  max-height: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#option1 {
+  background-color: #994602;
+  grid-area: option1;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+#option2 {
+  background-color: #994602;
+  grid-area: option2;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+#options {
+  display: grid;
+  grid-template-columns: 3, 1fr;
+  grid-template-rows: auto;
+  column-gap: 10px;
+  row-gap: 10px;
+  grid-template-areas: "op1 op2 op3" "op1 op2 op3";
+}
+
+#options .options_list {
+  border-radius: 8px;
+  background-color: #994602;
+  padding: 10px;
+}
+
+#options #options_list1 {
+  grid-area: op1;
+  text-align: center;
+}
+
+#options #options_list2 {
+  grid-area: op2;
+  text-align: center;
+}
+
+#options #options_list3 {
+  grid-area: op3;
+  text-align: center;
+}
+
+#photo_product {
+  width: 550px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#texto3 {
+  margin-left: 50px;
+}
+
+footer {
+  background-color: #994602;
+  font-size: large;
+  color: lightgrey;
+  padding: 10px 50px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer #footer__email-phone p {
+  margin: 0;
+}
+
+footer #back_top {
+  text-decoration: none;
+  color: lightgray;
+  background-color: rgb(180, 89, 3);
+  margin: center;
+  border-style: solid;
+  border-radius: 8px;
+  padding: 8px;
+  border-color: rgb(150, 63, 1);
+}
